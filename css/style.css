@@ -1,0 +1,672 @@
+/* @import url('http://fonts.cdnfonts.com/css/japanese-2020');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.6510416666666666vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(143, 139, 139);
+  transition: 0.3s ease background;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.darkbg {
+  visibility: hidden;
+  opacity: 0;
+}
+.ninja {
+  visibility: hidden;
+  opacity: 0;
+}
+.card {
+  visibility: hidden;
+  opacity: 0;
+}
+.star {
+  visibility: hidden;
+}
+.star2 {
+  visibility: hidden;
+}
+.start p {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  /* border: 2px solid black; */
+}
+.start p img {
+  height: 100%;
+  width: 100%;
+  /* z-index: 1; */
+}
+.start .trippypl {
+  position: fixed;
+  right: 35vh;
+  top: -0.5vh;
+  height: 0.05vh;
+  width: 0.05vh;
+  z-index: 1;
+  /* border: 1px solid white; */
+  /* background-image: url("/assets/img/trippy planet.png"); */
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+.start .trippypl img {
+  /* border: 2px solid white; */
+  height: 35vh;
+}
+
+.start .landscape {
+  /* height:; */
+  position: fixed;
+  /* mix-blend-mode: multiply; */
+  opacity: 1;
+  bottom: -2%;
+}
+.start .landscape img {
+  width: 100vw;
+  height: 56.54vh;
+  opacity: 1;
+  /* background-color: transparent;
+    mix-blend-mode: multiply; */
+  overflow: hidden;
+  object-fit: cover;
+}
+.start .logo img {
+  position: fixed;
+  height: 25vh;
+  z-index: 2;
+}
+.start .face {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50vw;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+.start .face img {
+  height: 40vh;
+  /* transform: scale(1.0); */
+  object-fit: cover;
+}
+.middle {
+  background-color: #242946;
+  position: fixed;
+  width: 60%;
+  height: 32%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.middle img {
+  object-fit: cover;
+  height: 13.5vh;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 80%;
+}
+.start .logo {
+  position: fixed;
+  left: 46%;
+  top: 13.5%;
+  transform: translate(-50%, 0);
+}
+/* @import url('http://fonts.cdnfonts.com/css/japanese-2020'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(73, 72, 72);
+  overflow: hidden;
+  /* scrollbar-gutter: stable both-edges; */
+}
+.dark {
+  visibility: visible;
+}
+
+.main {
+  /* visibility: hidden; */
+
+  background-image: url("./assets/img/whitebg.png");
+  display: flex;
+}
+.main .landscapes {
+  display: flex;
+  flex-direction: column;
+}
+.main .landscapes img {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+}
+
+.main #land-4 {
+  z-index: -1;
+  width: 100vw;
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+}
+
+.main #land-3 {
+  z-index: -2;
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
+  opacity: 0.9;
+}
+
+.main #land-2 {
+  z-index: -3;
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
+  opacity: 0.7;
+}
+
+.main #land-1 {
+  z-index: -4;
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
+  opacity: 0.2;
+}
+
+.main #particles {
+  z-index: 0;
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
+  left: 2%;
+}
+.main .bgs {
+  display: flex;
+  flex-direction: column;
+  /* width: 2880px;
+    height: 2048px; */
+}
+.main .bgs img {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+}
+
+.main #bg-1 {
+  z-index: -5;
+  position: fixed;
+  bottom: 0%;
+  opacity: 0.1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main #bg-2 {
+  z-index: -2;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+
+.main #bg-3 {
+  z-index: -1;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+.main .trees {
+  display: flex;
+  flex-direction: column;
+}
+.main .trees img {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  bottom: 0%;
+  /* right: 0%; */
+}
+.main #trees {
+  margin: 0;
+  position: fixed;
+  bottom: 0%;
+}
+
+.main #l-build {
+  position: fixed;
+  width: 80vw;
+  height: 115.67vh;
+  z-index: -4;
+  bottom: 0%;
+  opacity: 0.6;
+}
+
+.main #r-build {
+  z-index: -4;
+  bottom: 0%;
+
+  position: fixed;
+  right: -1%;
+  height: 150vh;
+  width: 90vw;
+  opacity: 0.9;
+}
+
+.main .ninja #character {
+  position: fixed;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  left: 50%;
+  opacity: 1;
+  height: 120vh;
+}
+
+.main .ninja #glow {
+  position: fixed;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  left: 50%;
+  height: 120vh;
+}
+
+.main .card {
+  /* position: fixed; */
+  width: 60%;
+  height: 32%;
+  position: absolute;
+  /* position: relative; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 80px;
+  z-index: 1;
+  background-image: url("../assets/img//ComingSoon_Card_Background.png");
+  border-radius: 20px;
+  font-family: "Japanese 2020";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  z-index: 1;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.main .card #viva-name {
+  /*  */
+  opacity: 0.6;
+}
+
+.main .card img {
+  /*  */
+  /* margin: 150px; */
+  margin-bottom: 25px;
+  width: 35vw;
+  height: 12vh;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* .main #logo {
+    
+    height: 25vh;
+    position: fixed;
+    left: 45%;
+    z-index: -0.5;
+} */
+
+.main #moon {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  /* border-radius: 42px; */
+  width: 50vw;
+  /* height: 560px; */
+}
+
+.main .star #star-img {
+  height: 25vh;
+  position: fixed;
+  left: 40%;
+  top: 60%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  /* z-index: 200; */
+}
+
+.main .star #star-line {
+  position: fixed;
+  left: 45.55%;
+  top: 72%;
+  height: 15vh;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  /* z-index: 200; */
+}
+
+.main .star2 #star-img2 {
+  height: 30vh;
+  position: fixed;
+  right: 38%;
+  /* z-index: 200; */
+  top: 57%;
+}
+
+.main .star2 #star-line2 {
+  position: fixed;
+  right: 43.75%;
+  top: 71.5%;
+  /* z-index: 200; */
+  height: 15vh;
+}
+.navbar {
+  visibility: hidden;
+  position: fixed;
+  margin-top: 7vh;
+  margin-left: 34vw;
+  /* margin: auto; */
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.navbar div {
+  color: white;
+  /* padding-left: 5vw; */
+  list-style: none;
+  font-size: large;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.home {
+  color: white;
+  /* font-weight: bold; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.navChange {
+  font-weight: bold;
+}
+.viva_front_text {
+  /* position: fixed; */
+  color: #9cf100;
+  font-size: 8.776041666666668vw;
+  margin: auto;
+  font-family: "Atlantis the lost City", sans-serif;
+}
+.secondary_text_first_page {
+  color: purple;
+  font-size: 5vh;
+  margin: auto;
+}
+.hi-slide {
+  visibility: hidden;
+  position: absolute;
+  /* width: 49.088541666666664vw; */
+  /* height: 38.421052631578945vh; */
+  /* margin-left: 25%; */
+  /* margin-top: 35vh; */
+  /* padding-bottom: 30vh; */
+  z-index: 1000;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+  position: absolute;
+  top: 50%;
+  width: 2.456842105263159vw;
+  height: 1.656842105263159vw;
+  margin-top: -2.1052631578948047vh;
+  border-radius: 8.6041666666667vw;
+  line-height: 2.0833333333333vw;
+  text-align: center;
+  cursor: pointer;
+  background-color: #bda733;
+  color: black;
+  transition: all 0.6s;
+  font-size: 1.0416666666667vw;
+  font-weight: bold;
+}
+.hi-slide .hi-next img,
+.hi-slide .hi-prev img {
+  align-items: center;
+  width: 1vw;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+  opacity: 1;
+  background-color: #e1c744;
+  box-shadow: 0 4px #a79434;
+  transition: 0.1s ease-in box-shadow;
+}
+
+.hi-slide .hi-prev {
+  left: -3.125vw;
+}
+
+/* .hi-slide .hi-prev::before {
+  content: "<";
+} */
+.hi-slide .hi-next {
+  right: -3.125vw;
+}
+/* .hi-slide .hi-next::before {
+  content: ">";
+} */
+
+.hi-slide > ul {
+  list-style: none;
+  position: relative;
+  width: 49.088541666666664vw;
+  height: 38.68421052631579vh;
+  margin: 0;
+  padding: 0;
+}
+
+.hi-slide > ul > li {
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  left: 24.544270833333332vw;
+  top: 19.210526315789473vh;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  /* border: 0.3vh solid rgb(211, 207, 207); */
+  border-radius: 1vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  text-align: center;
+  color: #fff;
+  /* box-shadow: 0.3vh 0.3vh rgb(132, 128, 128); */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.hi-slide > ul > li > img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+nav {
+  z-index: 11000;
+  position: sticky;
+  top: 3.5vh;
+  visibility: hidden;
+  height: 0;
+}
+
+nav .container {
+  width: 90%;
+  /* max-width: 1000px; */
+  max-width: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.651vw;
+  background: transparent;
+}
+nav .container ul {
+  list-style: none;
+}
+nav .container ul li {
+  display: inline-block;
+  font-size: x-large;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 1vh;
+  margin: 0 1.5vh;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  padding: 0.651vw 1.302vw;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav .container ul li.active {
+  font-weight: bolder;
+  /* transition: 1s ease-in font-weight; */
+  border-bottom: 1px solid white;
+}
+
+/* nav .container ul li.active a{
+
+} */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  /* border: 10px solid pink; */
+  width: 100vw;
+}
+.scrollitems {
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  /* height: 100vh; */
+}
+#contact-us {
+  justify-content: space-evenly;
+}
+.contact-card {
+  /* position: absolute; */
+  visibility: hidden;
+  width: 20vw;
+  height: 45vh;
+  display: flex;
+  background-image: url(../assets/img/contactUsCard.png);
+  justify-content: center;
+  align-items: center;
+  border-radius: 3vh;
+}
+.contact-div {
+  width: 15vw;
+  height: 35vh;
+  border-radius: 1.5vh;
+  background-color: #585858d9;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* opacity: 0.5; */
+}
+.contact-div img {
+  height: 15vh;
+  width: 9 vw;
+}
+.name {
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2vh;
+}
+
+.details {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4vh 0;
+  font-weight: 600;
+  font-size: 1.7vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.phoneNum{
+  margin-bottom: 1.5vh;
+}
