@@ -540,7 +540,7 @@ body {
   /* border: 0.3vh solid rgb(211, 207, 207); */
   border-radius: 5vh;
   background: rgba(0, 0, 0, 0.586);
-  border: 0.4vh outset rgb(225, 199, 68);
+  /* border: 0.4vh outset rgb(225, 199, 68); */
   backdrop-filter: saturate(180%) blur(10px); 
   text-align: center;
   color: #fff;
