@@ -11,13 +11,13 @@
         $.extend(true, setting, options);
         
         var states = [
-            { $zIndex: 1, width: 120+10, height: 150, top: 69, left: 134, $opacity: 0.2 },
-            { $zIndex: 2, width: 130+10, height: 170, top: 59, left: 0, $opacity: 0.4 },
-            { $zIndex: 3, width: 170+10, height: 218, top: 35, left: 110, $opacity: 0.7 },
-            { $zIndex: 4, width: 224+10, height: 288, top: 0, left: 263, $opacity: 1 },
-            { $zIndex: 3, width: 170+10, height: 218, top: 35, left: 470, $opacity: 0.7 },
-            { $zIndex: 2, width: 130+10, height: 170, top: 59, left: 620, $opacity: 0.4 },
-            { $zIndex: 1, width: 120+10, height: 150, top: 69, left: 500, $opacity: 0.2 }
+            { $zIndex: 1, width: 120+200, height: 150+30, top: 69, left: 134+130, $opacity: 0.2 },
+            { $zIndex: 2, width: 130+200, height: 170+30, top: 59, left: 0+130, $opacity: 0.4 },
+            { $zIndex: 3, width: 170+200, height: 218+30, top: 35, left: 110+130, $opacity: 0.7 },
+            { $zIndex: 4, width: 224+200, height: 288+30, top: 0, left: 263+130, $opacity: 1 },
+            { $zIndex: 3, width: 170+200, height: 218+30, top: 35, left: 470+130, $opacity: 0.7 },
+            { $zIndex: 2, width: 130+200, height: 170+30, top: 59, left: 620+130, $opacity: 0.4 },
+            { $zIndex: 1, width: 120+200, height: 150+30, top: 69, left: 500+130, $opacity: 0.2 }
         ];
 
         var $lis = $ele.find('li');
