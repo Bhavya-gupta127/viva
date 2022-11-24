@@ -35,7 +35,12 @@ function transition1() {
          opacity: 0;
        }
      }
-    
+     #viva-logo,.logo{
+      position: fixed;   
+      height: 25%;
+      top: -7vh;
+      left: -44vw;
+     }
      
     }`;
 
