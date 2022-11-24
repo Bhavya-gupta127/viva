@@ -53,8 +53,8 @@ window.addEventListener("scroll", (event) => {
 //     )
 // }
 function darkMode() {
-    transition1() ;
-    transition2();
+  transition1();
+  transition2();
   $(document).ready(function () {
     $("html").animate({ scrollTop: 0 }, 1);
     $("body").animate({ scrollTop: 0 }, 1);
@@ -70,6 +70,10 @@ function darkMode() {
   });
   var contactCard = gsap.timeline();
   contactCard.to(".contact-card", {
+    visibility: "visible",
+  });
+  var gold = gsap.timeline();
+  gold.to(".gold", {
     visibility: "visible",
   });
   var showNav = gsap.timeline();
