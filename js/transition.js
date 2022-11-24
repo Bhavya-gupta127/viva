@@ -90,7 +90,7 @@ function transition2() {
  #land-3,
  #land-4,
  #particles,
- #vivalogo, #trees{ 
+ #viva-logo, #trees{ 
     -webkit-mask-image:url('assets/img/nature-sprite-2.png');
     mask-image:url('assets/img/nature-sprite-2.png'); 
     -webkit-mask-size: 10000% 100%;
