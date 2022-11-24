@@ -178,7 +178,7 @@ body {
 .main {
   /* visibility: hidden; */
 
-  background-image: url("../assets/img/whitebg.png");
+  /* background-image: url("./assets/img/whitebg.png"); */
   display: flex;
   
 }
@@ -257,7 +257,7 @@ body {
 }
 
 .main #bg-2 {
-  z-index: -2;
+  z-index: -6;
   position: fixed;
   bottom: 0%;
   width: 100vw;
@@ -266,12 +266,21 @@ body {
 }
 
 .main #bg-3 {
-  z-index: -1;
+  z-index: -6;
   position: fixed;
   bottom: 0%;
   width: 100vw;
   height: 100vh;
   opacity: 1;
+}
+
+.main #whitebg{
+  z-index: -1;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.7;
 }
 .main .trees {
   display: flex;
@@ -476,7 +485,7 @@ body {
   /* margin-top: 35vh; */
   /* padding-bottom: 30vh; */
   z-index: 1000;
-  width: 80%;
+  width: 80%;  
 }
 
 .hi-slide .hi-next,
@@ -549,7 +558,7 @@ body {
   border-radius: 5vh;
   background: rgba(0, 0, 0, 0.586);
   /* border: 0.4vh outset rgb(225, 199, 68); */
-  backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px); 
   text-align: center;
   color: #fff;
   /* box-shadow: 0.3vh 0.3vh rgb(132, 128, 128); */
@@ -650,7 +659,6 @@ section {
 .contact-card {
   /* position: absolute; */
   visibility: hidden;
-  z-index: 10;
   width: 20vw;
   height: 45vh;
   display: flex;
@@ -694,7 +702,7 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
-.phoneNum {
+.phoneNum{
   margin-bottom: 1.5vh;
 }
 
@@ -712,6 +720,7 @@ section {
   z-index: 20;
 }
 
+
 #FOOTER {
   position: fixed;
   /* width: 175vh; */
@@ -728,18 +737,35 @@ section {
   float: right;
   width: 2.4vw;
   height: 2.4vw;
+  /* border: 1.5px solid white; */
+  border-radius: 0%;
+  padding: 7px;
+  /* margin-left: 13px;
+  margin-top: 4px; */
+  margin-right: 17px;
+}
+
+.image-container{
+  width: 3.0vw;
+  height: 3.0vw;
   border: 1.5px solid white;
   border-radius: 50%;
-  padding: 7px;
-  margin-left: 6px;
-  margin-top: 4px;
 }
 
 .icons img {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.8vw;
+  height: 1.8vw;
   background-size:contain;
+  margin-top:8px;
+  margin-left:7px;
+}
 
+.icons #instagram {
+  width: 2.8vw;
+  height: 2.8vw;
+  background-size:contain;
+  margin-left: 0.5px;
+  margin-top: 0px;
 }
 
 #FOOTER-menu {

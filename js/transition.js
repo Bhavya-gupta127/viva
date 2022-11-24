@@ -1,5 +1,5 @@
 function transition1() {
-  var styles1 = `.mainbg,.landscape,.face, #trippy,.middle,#vivalogo{ 
+  var styles1 = `.mainbg,.landscape,.face, #trippy,.middle,#viva-logo{ 
         -webkit-mask-image:url('assets/img/nature-sprite-2.png');
        mask-image:url('assets/img/nature-sprite-2.png'); 
        -webkit-mask-size: 10000% 100%;
@@ -75,6 +75,7 @@ function transition2() {
       opacity: 1;
     }
   }
+  
  
  .ninja #character,
  .ninja #glow,
@@ -89,7 +90,7 @@ function transition2() {
  #land-3,
  #land-4,
  #particles,
- #vivalogo, #trees{ 
+ #viva-logo, #trees{ 
     -webkit-mask-image:url('assets/img/nature-sprite-2.png');
     mask-image:url('assets/img/nature-sprite-2.png'); 
     -webkit-mask-size: 10000% 100%;

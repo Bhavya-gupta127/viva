@@ -53,8 +53,8 @@ window.addEventListener("scroll", (event) => {
 //     )
 // }
 function darkMode() {
-  transition1();
-  transition2();
+    transition1() ;
+    transition2();
   $(document).ready(function () {
     $("html").animate({ scrollTop: 0 }, 1);
     $("body").animate({ scrollTop: 0 }, 1);
