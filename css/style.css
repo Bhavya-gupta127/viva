@@ -45,7 +45,7 @@ html {
   left: 17vw;
   bottom: -1em;
   width: 70%;
-  z-index: 1000;
+  z-index: 100000;
   /* background-color: red; */
   /* color: white; */
   text-align: center;
@@ -505,14 +505,14 @@ body {
 .hi-slide .hi-prev {
   position: absolute;
   top: 50%;
-  width: 2.456842105263159vw;
+  /* width: 2.456842105263159vw; */
   height: 1.656842105263159vw;
-  margin-top: -2.1052631578948047vh;
+  /* margin-top: -2.1052631578948047vh; */
   border-radius: 8.6041666666667vw;
   line-height: 2.0833333333333vw;
   text-align: center;
   cursor: pointer;
-  background-color: #bda733;
+  /* background-color: #bda733; */
   color: black;
   transition: all 0.6s;
   font-size: 1.0416666666667vw;
@@ -521,15 +521,15 @@ body {
 .hi-slide .hi-next img,
 .hi-slide .hi-prev img {
   align-items: center;
-  width: 1vw;
+  width: 3vw;
 }
-.hi-slide .hi-next:hover,
+/* .hi-slide .hi-next:hover,
 .hi-slide .hi-prev:hover {
   opacity: 1;
-  background-color: #e1c744;
+  background-color: #1d1d1c;
   box-shadow: 0 4px #a79434;
-  transition: 0.1s ease-in box-shadow;
-}
+  transition: 0.1s ease-in background-color;
+} */
 
 .hi-slide .hi-prev {
   left: -3.125vw;
@@ -569,11 +569,12 @@ body {
   align-items: center;
   /* border: 0.3vh solid rgb(211, 207, 207); */
   border-radius: 5vh;
-  background: rgba(0, 0, 0, 0.586);
-  /* border: 0.4vh outset rgb(225, 199, 68); */
-  backdrop-filter: saturate(180%) blur(10px);
+  background-color: #5A5A5A;
+  /* background: rgba(165, 6, 6, 0.586); */
+  border: 0.4vh outset rgb(225, 199, 68);
+  /* backdrop-filter: saturate(180%) blur(10px); */
   text-align: center;
-  color: #fff;
+  color: rgb(220, 0, 0);
   /* box-shadow: 0.3vh 0.3vh rgb(132, 128, 128); */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -586,12 +587,13 @@ body {
 }
 
 .hi-slide > ul > li > img {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   background-position: center;
+  object-fit: contain;
   /* box-shadow: 0.3vh 0.3vh rgb(225, 199, 68); */
 
-  filter: drop-shadow(0 0 10vh rgba(218, 201, 116, 0.833));
+  /* filter: drop-shadow(0 0 10vh rgba(218, 201, 116, 0.833)); */
 }
 
 nav {
