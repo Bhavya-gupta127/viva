@@ -578,12 +578,12 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .container {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-}
+} */
 
 .hi-slide > ul > li > img {
   width: 70%;
