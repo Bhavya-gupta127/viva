@@ -240,7 +240,8 @@ body {
     height: 2048px; */
 }
 .main .bgs img {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: fixed;
   bottom: 0%;
@@ -252,16 +253,16 @@ body {
   position: fixed;
   bottom: 0%;
   opacity: 0.1;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .main #bg-2 {
   z-index: -6;
   position: fixed;
   bottom: 0%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   opacity: 1;
 }
 
@@ -269,8 +270,8 @@ body {
   z-index: -6;
   position: fixed;
   bottom: 0%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   opacity: 1;
 }
 
@@ -278,8 +279,8 @@ body {
   z-index: -1;
   position: fixed;
   bottom: 0%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   opacity: 0.7;
 }
 .main .trees {
@@ -307,9 +308,10 @@ body {
   position: fixed;
   height: 55vh;
   width: 55vw;
+  right: 0;
   /* top: 40vh; */
-  left: 45vw;
-  bottom: 0;
+  /* left: 45vw;
+  bottom: 0; */
 }
 
 .main #l-build {
@@ -394,12 +396,12 @@ body {
 }
 
 /* .main #logo {
-    
-    height: 25vh;
-    position: fixed;
-    left: 45%;
+  
+  height: 25vh;
+  position: fixed;
+  left: 45%;
     z-index: -0.5;
-} */
+  } */
 
 .main #moon {
   position: fixed;
@@ -569,7 +571,7 @@ body {
   align-items: center;
   /* border: 0.3vh solid rgb(211, 207, 207); */
   border-radius: 5vh;
-  background-color: #5A5A5A;
+  background-color: #5a5a5a;
   /* background: rgba(165, 6, 6, 0.586); */
   border: 0.4vh outset rgb(225, 199, 68);
   /* backdrop-filter: saturate(180%) blur(10px); */
@@ -597,7 +599,7 @@ body {
 }
 
 nav {
-  z-index: 11000;
+  z-index: 110;
   position: sticky;
   top: 3.5vh;
   visibility: hidden;
@@ -809,7 +811,6 @@ section {
 }
 
 @media only screen and (max-width: 480px) {
-  
   #FOOTER {
     position: fixed;
     /* width: 175vh; */
@@ -836,13 +837,12 @@ section {
   }
 }
 
-
-.hamburger{
+.hamburger {
   position: fixed;
   display: block;
   width: 3vw;
   height: 5vh;
-  cursor: pointer; 
+  cursor: pointer;
   background: none;
   left: 105vw;
   top: 2.5vh;
@@ -853,8 +853,10 @@ section {
   visibility: hidden;
 }
 
-.hamburger .bar,.hamburger::after,.hamburger::before {
-  content: '';
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
   display: block;
   background-color: white;
   width: 8vw;
@@ -867,20 +869,20 @@ section {
   display: block;
   position: fixed;
   right: 0;
-  top:0;
+  top: 0;
   bottom: 0;
   left: 100%;
   background-color: black;
   opacity: 0.9;
   z-index: 40;
   padding-top: 20vh;
-  transition: 0.3s; 
+  transition: 0.3s;
 }
-.mobile-menu.is-active{
-  left:30vw;
+.mobile-menu.is-active {
+  left: 30vw;
 }
 
-.mobile-menu-nav{
+.mobile-menu-nav {
   display: block;
   text-align: center;
   margin-bottom: 7vh;
@@ -888,15 +890,13 @@ section {
   text-decoration: none;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
-
 }
 
-@media  (max-width: 768px){
-  .hamburger{
+@media (max-width: 768px) {
+  .hamburger {
     display: none;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
-  
 }
