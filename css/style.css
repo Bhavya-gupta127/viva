@@ -45,7 +45,7 @@ html {
   left: 17vw;
   bottom: -1em;
   width: 70%;
-  z-index: 100000;
+  z-index: 120;
   /* background-color: red; */
   /* color: white; */
   text-align: center;
@@ -757,7 +757,7 @@ section {
   margin-right: 36%;
   height: 50px;
   bottom: 2vh;
-  z-index: 3;
+  z-index: 121;
 }
 
 .icons {
@@ -770,6 +770,7 @@ section {
   /* margin-left: 13px;
   margin-top: 4px; */
   margin-right: 17px;
+  
 }
 
 .image-container {
