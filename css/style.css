@@ -925,6 +925,9 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
+#coming_soon_text{
+  font-size: 10vh;
+}
 @media (max-width: 768px) {
   .hamburger {
     display: none;
@@ -934,6 +937,19 @@ section {
   }
 }
 
+/* media query for coming soon card */
+@media(max-device-width: 768px){
+  #coming_soon_text{
+    font-size: 5vh;
+  }
+  .main .card{
+    width: 88%;
+    height: 20vh;
+  }
+  .main #viva-main{
+    font-size:5vh;
+  }
+}
 /* for ninja at 768 */
 @media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
   .ninja img {
@@ -968,4 +984,7 @@ section {
     position: relative;
     bottom: 3em;
   }
+  /* #coming_soon_text{
+    font-size: 5vh;
+  } */
 }
