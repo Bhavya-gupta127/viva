@@ -89,6 +89,12 @@ function darkMode() {
     duration: 0.5,
     visibility: "visible",
   });
+  var hamburger = gsap.timeline();
+  hamburger.to(".hamburger",{
+    delay: 1.5,
+    duration: 0.5,
+    visibility: "visible",
+  })
   var planet = gsap.timeline();
   planet
     .to(".trippypl", {
@@ -285,3 +291,14 @@ function darkMode() {
   // dark[0].style.visibility = "visible";
   // light[0].style.visibility = "hidden";
 }
+
+
+// Hamburger Menu - Option
+function toggle(){
+  mobile_menu.classList.toggle("is-active");
+}
+const hamburger_menu = document.querySelector(".hamburger");
+const mobile_menu = document.querySelector(".mobile-menu");
+hamburger_menu.addEventListener("click",toggle);
+
+
