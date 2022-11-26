@@ -697,24 +697,35 @@ section {
   height: 15vh;
   width: 9 vw;
 }
+.photo {
+  margin-top: 2vh;
+}
 .name {
   color: white;
   font-weight: bold;
   font-size: 3vh;
   font-family: "Montserrat", sans-serif;
-  margin-top: 2vh;
 }
 
 .details {
   color: white;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4vh 0;
   font-weight: 600;
   font-size: 1.7vh;
   font-family: "Montserrat", sans-serif;
+  z-index: 100000;
+}
+
+.mobile-menu-content.is-active {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .phoneNum {
@@ -764,6 +775,7 @@ section {
   height: 3vw;
   border: 1.5px solid white;
   border-radius: 50%;
+  z-index: 100000;
 }
 
 .icons img {
