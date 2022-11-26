@@ -937,6 +937,7 @@ section {
   }
 }
 
+/* media query for coming soon card */
 @media(max-device-width: 768px){
   #coming_soon_text{
     font-size: 5vh;
