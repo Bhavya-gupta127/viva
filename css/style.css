@@ -877,8 +877,8 @@ section {
   cursor: pointer;
   background: none;
   /* left: 105vw; */
-  right: 10vw;
-  top: 2.5vh;
+  right: 12vw;
+  top: 3.0vh;
   border: none;
   appearance: none;
   outline: none;
@@ -921,24 +921,34 @@ section {
   margin-bottom: 7vh;
   color: white;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-device-width: 769px){
   .hamburger {
     display: none;
   }
   .mobile-menu {
     display: none;
   }
+  
 }
 
-/* for ninja at 768 */
+/* for ninja,navbar and viva-log at 768 */
 @media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
   .ninja img {
     height: 890px;
   }
+  .container{
+    display: none;
+  }
+  #viva-logo,.logo{
+    position: fixed;   
+    height: 25%;
+    top: -11.4vh;
+    left: -44vw;
+   }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {

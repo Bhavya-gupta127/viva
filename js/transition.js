@@ -38,7 +38,7 @@ function transition1() {
      #viva-logo,.logo{
       position: fixed;   
       height: 25%;
-      top: -7vh;
+      top: -9vh;
       left: -44vw;
      }
      
