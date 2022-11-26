@@ -106,16 +106,21 @@ html {
   /* border: 2px solid white; */
   height: 35vh;
 }
+#sponsers {
+  /* border: 2px solid red; */
+  width: 100%;
+}
 
 .start .landscape {
   /* height:; */
   position: fixed;
+  width: 100%;
   /* mix-blend-mode: multiply; */
   opacity: 1;
   bottom: -2%;
 }
 .start .landscape img {
-  width: 100vw;
+  width: 100%;
   height: 56.54vh;
   opacity: 1;
   /* background-color: transparent;
@@ -198,7 +203,7 @@ body {
   flex-direction: column;
 }
 .main .landscapes img {
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   position: fixed;
   bottom: 0%;
@@ -207,7 +212,7 @@ body {
 
 .main #land-4 {
   z-index: -1;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   left: 0%;
   bottom: 0%;
@@ -215,7 +220,7 @@ body {
 
 .main #land-3 {
   z-index: -2;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0%;
   opacity: 0.9;
@@ -223,7 +228,7 @@ body {
 
 .main #land-2 {
   z-index: -3;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0%;
   opacity: 0.7;
@@ -231,7 +236,7 @@ body {
 
 .main #land-1 {
   z-index: -4;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0%;
   opacity: 0.2;
@@ -239,7 +244,7 @@ body {
 
 .main #particles {
   z-index: 0;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0%;
   left: 2%;
@@ -299,7 +304,7 @@ body {
   flex-direction: column;
 }
 .main .trees img {
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   position: fixed;
   bottom: 0%;
@@ -684,6 +689,8 @@ section {
 }
 #contact-us {
   justify-content: space-evenly;
+  /* position: relative; */
+  /* border: 2px solid red; */
 }
 .contact-card {
   /* position: absolute; */
@@ -695,6 +702,7 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 3vh;
+  text-align: center;
 }
 .contact-div {
   width: 15vw;
@@ -730,7 +738,7 @@ section {
   font-weight: 600;
   font-size: 1.7vh;
   font-family: "Montserrat", sans-serif;
-  z-index: 100000;
+  z-index: 1000;
 }
 
 .mobile-menu-content.is-active {
@@ -868,12 +876,13 @@ section {
   height: 5vh;
   cursor: pointer;
   background: none;
-  left: 105vw;
+  /* left: 105vw; */
+  right: 10vw;
   top: 2.5vh;
   border: none;
   appearance: none;
   outline: none;
-  z-index: 50;
+  z-index: 155;
   visibility: hidden;
 }
 
@@ -924,19 +933,39 @@ section {
     display: none;
   }
 }
-/* 
-@media screen and (min-width: 900px) {
-  .ninja {
-    height: 100vh;
-  }
-  .ninja img {
-    background-color: #9cf100;
-    border: 2px solid yellow;
-    height: 690px;
-  }
-} */
+
+/* for ninja at 768 */
 @media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
   .ninja img {
     height: 890px;
+  }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {
+  #contact-us {
+  }
+  .contact-card {
+    /* border: 2px solid red; */
+    width: 45%;
+    height: 30%;
+  }
+  .contact-div {
+    /* border: 2px solid red; */
+    width: 80%;
+    height: 80%;
+  }
+  .photo {
+    height: 80%;
+    /* border: 3px solid white; */
+  }
+  .name {
+    font-size: 2em;
+  }
+  .details {
+    /* justify-content: top; */
+    /* border: 2px solid wheat; */
+    width: 100%;
+    position: relative;
+    bottom: 3em;
   }
 }
