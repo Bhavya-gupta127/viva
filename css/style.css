@@ -37,18 +37,29 @@ html {
 .darkbg {
   visibility: hidden;
   opacity: 0;
+  /* justify-content: center; */
+  /* margin: auto; */
 }
 .ninja {
-  visibility: hidden;
-
+  /* visibility: hidden; */
+  /* border: 2px solid red; */
+  /* margin: auto; */
   position: fixed;
-  left: 17vw;
+  width: 100%;
   bottom: -1em;
-  width: 70%;
+  /* padding: 0; */
+  /* margin: 0; */
   z-index: 120;
+
+  /* justify-content: center; */
+
   /* background-color: red; */
   /* color: white; */
   text-align: center;
+}
+.ninja img {
+  /* border: 2px solid black; */
+  height: 390px;
 }
 .card {
   visibility: hidden;
@@ -321,12 +332,13 @@ body {
   z-index: -4;
   bottom: 0%;
   opacity: 0.6;
+  object-fit: cover;
 }
 
 .main #r-build {
   z-index: -4;
   bottom: 0%;
-
+  object-fit: cover;
   position: fixed;
   right: -1%;
   height: 150vh;
@@ -734,10 +746,10 @@ section {
   margin-bottom: 1.5vh;
 }
 
-#character_main {
+/* #character_main {
   width: 30%;
   height: 40%;
-}
+} */
 
 .gold {
   visibility: hidden;
@@ -770,7 +782,6 @@ section {
   /* margin-left: 13px;
   margin-top: 4px; */
   margin-right: 17px;
-  
 }
 
 .image-container {
@@ -911,5 +922,21 @@ section {
   }
   .mobile-menu {
     display: none;
+  }
+}
+/* 
+@media screen and (min-width: 900px) {
+  .ninja {
+    height: 100vh;
+  }
+  .ninja img {
+    background-color: #9cf100;
+    border: 2px solid yellow;
+    height: 690px;
+  }
+} */
+@media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
+  .ninja img {
+    height: 890px;
   }
 }
