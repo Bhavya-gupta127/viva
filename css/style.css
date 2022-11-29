@@ -59,7 +59,7 @@ html {
 }
 .ninja img {
   /* border: 2px solid black; */
-  height: 390px;
+  height: 340px;
 }
 .card {
   visibility: hidden;
@@ -360,7 +360,6 @@ body {
   opacity: 1;
   height: 120vh;
   pointer-events: none;
-
 }
 
 .main .ninja #glow {
@@ -882,7 +881,7 @@ section {
   background: none;
   /* left: 105vw; */
   right: 12vw;
-  top: 3.0vh;
+  top: 3vh;
   border: none;
   appearance: none;
   outline: none;
@@ -929,7 +928,7 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
-#coming_soon_text{
+#coming_soon_text {
   font-size: 10vh;
 }
 @media only screen and (min-device-width: 768px) {
@@ -942,16 +941,16 @@ section {
 }
 
 /* media query for coming soon card */
-@media(max-device-width: 768px){
-  #coming_soon_text{
+@media (max-device-width: 768px) {
+  #coming_soon_text {
     font-size: 5vh;
   }
-  .main .card{
+  .main .card {
     width: 88%;
     height: 20vh;
   }
-  .main #viva-main{
-    font-size:5vh;
+  .main #viva-main {
+    font-size: 5vh;
   }
 }
 /* for ninja,navbar and viva-logo at 768 */
@@ -959,15 +958,23 @@ section {
   .ninja img {
     height: 890px;
   }
-  .container{
-    display: none ;
+  .container {
+    display: none;
   }
-  #viva-logo,.logo{
-    position: fixed;   
+  #viva-logo,
+  .logo {
+    position: fixed;
     height: 25%;
     top: -11.4vh;
     left: -44vw;
-   }
+  }
+  .star {
+    /* visibility: hidden; */
+    display: none;
+  }
+  .star2 {
+    display: none;
+  }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {
@@ -998,13 +1005,14 @@ section {
     bottom: 3em;
   }
   .hi-slide > ul {
-    left:-22vw;
+    left: -22vw;
     top: -35vw;
-    z-index:-1; 
+    z-index: -1;
   }
   .hi-slide .hi-next img,
   .hi-slide .hi-prev img {
-    width: 8vw; z-index: 10000000;
+    width: 8vw;
+    z-index: 10000000;
   }
 
   /* #coming_soon_text{
