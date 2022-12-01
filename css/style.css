@@ -975,6 +975,26 @@ section {
   .star2 {
     display: none;
   }
+  .icons {
+    float: right;
+    width: 7.4vw;
+    height: 7.4vw;
+    visibility: hidden;
+    /* border: 1.5px solid white; */
+    /* border-radius: 0%; */
+    /* padding: 7px; */
+    /* margin-right: 17px; */
+  }
+  .icons img {
+    width: 6vw;
+    visibility: visible;
+    height: 6vw;
+  }
+  .icons #instagram {
+    width: 7.5vw;
+    visibility: visible;
+    height: 7.5vw;
+  }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {
