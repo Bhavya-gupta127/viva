@@ -181,7 +181,7 @@ html {
 .middle {
   position: fixed;
   width: 50%;
-  height: 35%;
+  height: 40%;
   opacity: 1;
   position: fixed;
   top: 50%;
@@ -571,8 +571,8 @@ body {
   color: #9cf100;
   font-size: 10.5vw;
   margin: auto;
-  margin-top: -4.5vw;
-  margin-bottom: -2vw;
+  margin-top: -5.5vw;
+  margin-bottom: -1.5vw;
   font-family: "Atlantis the lost City", sans-serif;
   opacity: 1;;
   z-index: 2;
@@ -580,7 +580,7 @@ body {
 
 .secondary_text_first_page {
   color: rgb(229, 139, 229);
-  font-size: 3vh;
+  font-size: 1.42vw;
   font-weight: bold;
   margin: auto;
   font-family: "Montserrat";
