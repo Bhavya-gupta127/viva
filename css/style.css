@@ -1,13 +1,30 @@
 /* @import url('http://fonts.cdnfonts.com/css/japanese-2020');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+@font-face {
+  font-family: 'Japanese 2020';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Japanese 2020'), url('https://res.cloudinary.com/desyuhf6j/raw/upload/v1670065794/Vivacity/JAPANESE_2020_ntnpes.woff') format('woff');
+}
+
+@font-face {
+  font-family: Atlantis the lost city;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atlantis the lost City'), url('https://res.cloudinary.com/desyuhf6j/raw/upload/v1670065814/Vivacity/Atlantis_the_lost_City_qnhcby.woff') format('woff')
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 0.6510416666666666vw;
@@ -30,6 +47,7 @@ html {
   background: rgb(143, 139, 139);
   transition: 0.3s ease background;
 }
+
 .pointer {
   cursor: pointer;
 }
@@ -40,6 +58,7 @@ html {
   /* justify-content: center; */
   /* margin: auto; */
 }
+
 .ninja {
   /* visibility: hidden; */
   /* border: 2px solid red; */
@@ -57,20 +76,25 @@ html {
   /* color: white; */
   text-align: center;
 }
+
 .ninja img {
   /* border: 2px solid black; */
   height: 340px;
 }
+
 .card {
   visibility: hidden;
   opacity: 0;
 }
+
 .star {
   visibility: hidden;
 }
+
 .star2 {
   visibility: hidden;
 }
+
 .start p {
   margin: 0;
   padding: 0;
@@ -84,11 +108,13 @@ html {
   z-index: -1;
   /* border: 2px solid black; */
 }
+
 .start p img {
   height: 100%;
   width: 100%;
   /* z-index: 1; */
 }
+
 .start .trippypl {
   position: fixed;
   right: 35vh;
@@ -102,10 +128,12 @@ html {
   background-position: center;
   background-size: cover; */
 }
+
 .start .trippypl img {
   /* border: 2px solid white; */
   height: 35vh;
 }
+
 #sponsers {
   /* border: 2px solid red; */
   width: 100%;
@@ -119,6 +147,7 @@ html {
   opacity: 1;
   bottom: -2%;
 }
+
 .start .landscape img {
   width: 100%;
   height: 56.54vh;
@@ -128,11 +157,13 @@ html {
   overflow: hidden;
   object-fit: cover;
 }
+
 .start .logo img {
   position: fixed;
   height: 25vh;
   z-index: 2;
 }
+
 .start .face {
   position: fixed;
   bottom: 0;
@@ -140,16 +171,18 @@ html {
   transform: translate(-50%, 0);
   z-index: 3;
 }
+
 .start .face img {
   height: 40vh;
   /* transform: scale(1.0); */
   object-fit: cover;
 }
+
 .middle {
-  background-color: #242946;
   position: fixed;
-  width: 60%;
-  height: 32%;
+  width: 50%;
+  height: 35%;
+  opacity: 1;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -159,7 +192,28 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-top-color: #9cf100;
+  border-top: 0vw;
+  padding-top: 0vw;
 }
+
+.middle::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  border-radius: 5vh;
+  background-image: url('../assets/img/Inital_page_card_background.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  /* background-color: #242946; */
+}
+
 .middle img {
   object-fit: cover;
   height: 13.5vh;
@@ -170,12 +224,14 @@ html {
   max-width: 90%;
   max-height: 80%;
 }
+
 .start .logo {
   position: fixed;
   left: 46%;
   top: 13.5%;
   transform: translate(-50%, 0);
 }
+
 /* @import url('http://fonts.cdnfonts.com/css/japanese-2020'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
 * {
@@ -183,11 +239,13 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: rgb(73, 72, 72);
   overflow: hidden;
   /* scrollbar-gutter: stable both-edges; */
 }
+
 .dark {
   visibility: visible;
 }
@@ -198,10 +256,12 @@ body {
   /* background-image: url("./assets/img/whitebg.png"); */
   display: flex;
 }
+
 .main .landscapes {
   display: flex;
   flex-direction: column;
 }
+
 .main .landscapes img {
   width: 100%;
   object-fit: cover;
@@ -249,12 +309,14 @@ body {
   bottom: 0%;
   left: 2%;
 }
+
 .main .bgs {
   display: flex;
   flex-direction: column;
   /* width: 2880px;
     height: 2048px; */
 }
+
 .main .bgs img {
   width: 100%;
   height: 100%;
@@ -299,10 +361,12 @@ body {
   height: 100%;
   opacity: 0.7;
 }
+
 .main .trees {
   display: flex;
   flex-direction: column;
 }
+
 .main .trees img {
   width: 100%;
   object-fit: cover;
@@ -310,11 +374,13 @@ body {
   bottom: 0%;
   /* right: 0%; */
 }
+
 .main #trees {
   margin: 0;
   position: fixed;
   bottom: 0%;
 }
+
 #trees_right {
   /* height: 55vh;
   width: 55vw;
@@ -382,7 +448,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 80px;
   z-index: 1;
-  background-image: url("../assets/img//ComingSoon_Card_Background.png");
+  background-image: url("https://res.cloudinary.com/desyuhf6j/image/upload/v1670064425/Vivacity/ComingSoon_Card_Background_jiqe0x.png");
   border-radius: 20px;
   font-family: "Japanese 2020";
   font-style: normal;
@@ -467,6 +533,7 @@ body {
   /* z-index: 200; */
   height: 15vh;
 }
+
 .navbar {
   visibility: hidden;
   position: fixed;
@@ -488,6 +555,7 @@ body {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
+
 .home {
   color: white;
   /* font-weight: bold; */
@@ -497,18 +565,31 @@ body {
 .navChange {
   font-weight: bold;
 }
+
 .viva_front_text {
   /* position: fixed; */
   color: #9cf100;
-  font-size: 8.776041666666668vw;
+  font-size: 10.5vw;
   margin: auto;
+  margin-top: -4.5vw;
+  margin-bottom: -2vw;
   font-family: "Atlantis the lost City", sans-serif;
+  opacity: 1;;
+  z-index: 2;
 }
+
 .secondary_text_first_page {
-  color: purple;
-  font-size: 5vh;
+  color: rgb(229, 139, 229);
+  font-size: 3vh;
+  font-weight: bold;
   margin: auto;
+  font-family: "Montserrat";
+  margin-bottom: 0vw;
+  padding-bottom: 0vw;
+  margin-top: -1vw;
+  z-index: 2;
 }
+
 .hi-slide {
   visibility: hidden;
   position: relative;
@@ -538,11 +619,13 @@ body {
   font-size: 1.0416666666667vw;
   font-weight: bold;
 }
+
 .hi-slide .hi-next img,
 .hi-slide .hi-prev img {
   align-items: center;
   width: 3vw;
 }
+
 /* .hi-slide .hi-next:hover,
 .hi-slide .hi-prev:hover {
   opacity: 1;
@@ -561,11 +644,12 @@ body {
 .hi-slide .hi-next {
   right: -3.125vw;
 }
+
 /* .hi-slide .hi-next::before {
   content: ">";
 } */
 
-.hi-slide > ul {
+.hi-slide>ul {
   list-style: none;
   position: absolute;
   width: 49.088541666666664vw;
@@ -576,7 +660,7 @@ body {
   left: -vw;
 }
 
-.hi-slide > ul > li {
+.hi-slide>ul>li {
   overflow: hidden;
   position: absolute;
   z-index: 0;
@@ -608,7 +692,7 @@ body {
   }
 } */
 
-.hi-slide > ul > li > img {
+.hi-slide>ul>li>img {
   width: 100%;
   height: 100%;
   background-position: center;
@@ -642,12 +726,14 @@ nav .container {
   align-items: center;
   justify-content: center; */
 }
+
 /* nav .container img{
  
 } */
 nav .container ul {
   list-style: none;
 }
+
 nav .container ul li {
   display: inline-block;
   font-size: x-large;
@@ -684,17 +770,20 @@ section {
   /* border: 10px solid pink; */
   width: 100vw;
 }
+
 .scrollitems {
   scroll-snap-type: y mandatory;
   /* overflow-y: scroll; */
   overflow-x: hidden;
   /* height: 100vh; */
 }
+
 #contact-us {
   justify-content: space-evenly;
   /* position: relative; */
   /* border: 2px solid red; */
 }
+
 .contact-card {
   /* position: absolute; */
   visibility: hidden;
@@ -707,6 +796,7 @@ section {
   border-radius: 3vh;
   text-align: center;
 }
+
 .contact-div {
   width: 15vw;
   height: 35vh;
@@ -718,13 +808,16 @@ section {
   align-items: center;
   /* opacity: 0.5; */
 }
+
 .contact-div img {
   height: 15vh;
   width: 9 vw;
 }
+
 .photo {
   margin-top: 2vh;
 }
+
 .name {
   color: white;
   font-weight: bold;
@@ -857,6 +950,7 @@ section {
     bottom: 35px;
     z-index: 10;
   }
+
   .icons {
     float: right;
     width: 5vw;
@@ -866,6 +960,7 @@ section {
     margin-left: 8px;
     margin-top: 4px;
   }
+
   .icons img {
     width: 5vw;
     height: 5vw;
@@ -914,6 +1009,7 @@ section {
   padding-top: 20vh;
   transition: 0.3s;
 }
+
 .mobile-menu.is-active {
   left: 30vw;
 }
@@ -931,10 +1027,12 @@ section {
 #coming_soon_text {
   font-size: 10vh;
 }
+
 @media only screen and (min-device-width: 768px) {
   .hamburger {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
@@ -945,22 +1043,27 @@ section {
   #coming_soon_text {
     font-size: 5vh;
   }
+
   .main .card {
     width: 88%;
     height: 20vh;
   }
+
   .main #viva-main {
     font-size: 5vh;
   }
 }
+
 /* for ninja,navbar and viva-logo at 768 */
 @media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
   .ninja img {
     height: 890px;
   }
+
   .container {
     display: none;
   }
+
   #viva-logo,
   .logo {
     position: fixed;
@@ -968,13 +1071,16 @@ section {
     top: -11.4vh;
     left: -44vw;
   }
+
   .star {
     /* visibility: hidden; */
     display: none;
   }
+
   .star2 {
     display: none;
   }
+
   .icons {
     float: right;
     width: 7.4vw;
@@ -985,11 +1091,13 @@ section {
     /* padding: 7px; */
     /* margin-right: 17px; */
   }
+
   .icons img {
     width: 6vw;
     visibility: visible;
     height: 6vw;
   }
+
   .icons #instagram {
     width: 7.5vw;
     visibility: visible;
@@ -998,25 +1106,29 @@ section {
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {
-  #contact-us {
-  }
+  #contact-us {}
+
   .contact-card {
     /* border: 2px solid red; */
     width: 45%;
     height: 30%;
   }
+
   .contact-div {
     /* border: 2px solid red; */
     width: 80%;
     height: 80%;
   }
+
   .photo {
     height: 80%;
     /* border: 3px solid white; */
   }
+
   .name {
     font-size: 2em;
   }
+
   .details {
     /* justify-content: top; */
     /* border: 2px solid wheat; */
@@ -1024,11 +1136,13 @@ section {
     position: relative;
     bottom: 3em;
   }
-  .hi-slide > ul {
+
+  .hi-slide>ul {
     left: -22vw;
     top: -35vw;
     z-index: -1;
   }
+
   .hi-slide .hi-next img,
   .hi-slide .hi-prev img {
     width: 8vw;
