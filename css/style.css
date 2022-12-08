@@ -1056,8 +1056,11 @@ section {
 
 /* for ninja,navbar and viva-logo at 768 */
 @media only screen and (min-device-width: 0px) and (max-device-width: 768px) {
-  .ninja img {
-    height: 890px;
+  .ninja img,.face {
+    height: 690px;
+  }
+  .trippypl{
+    display: none;
   }
 
   .container {
@@ -1153,3 +1156,30 @@ section {
     font-size: 5vh;
   } */
 }
+
+
+#loader {
+  position: absolute;
+  display: flex;
+  margin: 0;
+  background-color: black;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+
+#loader img {
+  width: auto;
+  height: 100vh;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #loader img {
+      position: fixed;
+      width: 100vw;
+      height: 55vh;
+      top: 18vh;
+  }
+}
+

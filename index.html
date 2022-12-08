@@ -21,6 +21,7 @@
 <!-- <img src="assets/img/viva_logo_nav.png" id="viva_logo_small">  -->
 
 <body>
+  
    <nav>
       <div class="container">
          <ul>
@@ -31,6 +32,9 @@
       </div>
    </nav>
    <div id="start" class="start">
+      <div id="loader">
+         <img src="assets/img/loader.gif" />
+      </div>
       <div class="logo">
          <img src="assets/img/viva logo.png" alt="" id="viva-logo" />
       </div>
@@ -202,10 +206,10 @@
                   <div class="name">PIYUSH JHAWAR</div>
                   <div class="details">
                      <a href="tel:+918302465700" style="padding-right: 5vh;">
-                        <img width="30vh" height="30vh" src="./assets/img/9057124_phone_icon.svg" alt="Phone Icon" />
+                        <img width="35vh" height="35vh" src="./assets/img/9057124_phone_icon.svg" alt="Phone Icon" />
                      </a>
                      <a href="mailto:19uec037@lnmiit.ac.in">
-                        <img width="30vh" height="30vh" src="./assets/img/211660_email_icon.svg" alt="Email Icon" />
+                        <img width="35vh" height="35vh" src="./assets/img/211660_email_icon.svg" alt="Email Icon" />
                      </a>
                   </div>
                </div>
@@ -218,16 +222,17 @@
                   <div class="name">SAGAR SHEORAN</div>
                   <div class="details">
                      <a href="tel:+919694542413" style="padding-right: 5vh;">
-                        <img width="30vh" height="30vh" src="./assets/img/9057124_phone_icon.svg" alt="Phone Icon" />
+                        <img width="35vh" height="35vh" src="./assets/img/9057124_phone_icon.svg" alt="Phone Icon" />
                      </a>
                      <a href="mailto:19ucc071@lnmiit.ac.in">
-                        <img width="30vh" height="30vh" src="./assets/img/211660_email_icon.svg" alt="Email Icon" />
+                        <img width="35vh" height="35vh" src="./assets/img/211660_email_icon.svg" alt="Email Icon" />
                      </a>
                   </div>
                </div>
             </div>
          </section>
       </div>
+   </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
       <script src="js/index.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -236,6 +241,13 @@
       <script>
          $(".slide").hiSlide();
 
+      </script>
+      <script>
+         window.addEventListener("load",function(){
+            document.getElementById("loader").style.display = "none";
+            console.log("load done");
+         });
+      
       </script>
 </body>
 
