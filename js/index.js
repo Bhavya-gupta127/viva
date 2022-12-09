@@ -31,6 +31,7 @@ window.addEventListener("scroll", () => {
 function changePlanet() {
   planet.src = "assets/img/moon.png";
 }
+
 window.addEventListener("scroll", (event) => {
   myScrollFunction();
 });

@@ -1,7 +1,7 @@
 function transition1() {
   var styles1 = `.mainbg,.landscape,.face, #trippy,.middle,#viva-logo{ 
-        -webkit-mask-image:url('assets/img/nature-sprite-2.png');
-       mask-image:url('assets/img/nature-sprite-2.png'); 
+        // -webkit-mask-image:url('https://res.cloudinary.com/desyuhf6j/image/upload/q_auto:good/v1670064431/Vivacity/nature-sprite-2_oitu7p.png');
+        // mask-image:url('https://res.cloudinary.com/desyuhf6j/image/upload/q_auto:good/v1670064431/Vivacity/nature-sprite-2_oitu7p.png'); 
        -webkit-mask-size: 10000% 100%;
        mask-size: 10000% 100%;
        -webkit-animation: mask-play-first 0.8s steps(70) backwards;
@@ -91,12 +91,11 @@ function transition2() {
  #land-4,
  #particles,
  #viva-logo, #trees{ 
-    -webkit-mask-image:url('assets/img/nature-sprite-2.png');
-    mask-image:url('assets/img/nature-sprite-2.png'); 
     -webkit-mask-size: 10000% 100%;
     mask-size: 10000% 100%;
     -webkit-animation: mask-play-second 0.8s steps(70) forwards;
-    animation: mask-play-second 0.8s steps(70) forwards ;`;
+    animation: mask-play-second 0.8s steps(70) forwards ;
+  }`;
   var stylesheet = document.createElement("style");
   stylesheet.innerText = styles2;
   document.head.appendChild(stylesheet);
