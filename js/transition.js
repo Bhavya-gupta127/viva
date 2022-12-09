@@ -4,8 +4,8 @@ function transition1() {
        mask-image:url('assets/img/nature-sprite-2.png'); 
        -webkit-mask-size: 10000% 100%;
        mask-size: 10000% 100%;
-       -webkit-animation: mask-play-first 1s steps(70) backwards;
-       animation: mask-play-first 1s steps(70) backwards ;
+       -webkit-animation: mask-play-first 0.8s steps(70) backwards;
+       animation: mask-play-first 0.8s steps(70) backwards ;
        
     }
     
@@ -95,8 +95,8 @@ function transition2() {
     mask-image:url('assets/img/nature-sprite-2.png'); 
     -webkit-mask-size: 10000% 100%;
     mask-size: 10000% 100%;
-    -webkit-animation: mask-play-second 1s steps(70) forwards;
-    animation: mask-play-second 1s steps(70) forwards ;`;
+    -webkit-animation: mask-play-second 0.8s steps(70) forwards;
+    animation: mask-play-second 0.8s steps(70) forwards ;`;
   var stylesheet = document.createElement("style");
   stylesheet.innerText = styles2;
   document.head.appendChild(stylesheet);

@@ -107,7 +107,7 @@ function darkMode() {
       opacity: 1,
       x: 0,
       duration: 1,
-      delay: 2,
+      delay: 0.5,
     });
   var card = gsap.timeline();
   // card.to(".middle", 2, { rotationY: 90, transformOrigin: "50% 50%", ease: Linear.easeNone, opacity: 0, duration: 0.5, })
