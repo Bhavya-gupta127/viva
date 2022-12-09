@@ -196,6 +196,8 @@ html {
   border-top-color: #9cf100;
   border-top: 0vw;
   padding-top: 0vw;
+  
+  border-image: linear-gradient(red, purple) 30;
 }
 
 .middle::before {
@@ -206,9 +208,8 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
   border-radius: 5vh;
-  background-image: url('../assets/img/Inital_page_card_background.jpg');
+  background-image: url('../assets/img/card\ bg.svg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
