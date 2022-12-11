@@ -315,6 +315,7 @@ body {
 .main .bgs {
   display: flex;
   flex-direction: column;
+  
   /* width: 2880px;
     height: 2048px; */
 }
@@ -322,19 +323,21 @@ body {
 .main .bgs img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   position: fixed;
-  bottom: 0%;
+  /* bottom: -20%; */
   right: 0%;
 }
 
 .main #bg-1 {
   z-index: -5;
   position: fixed;
+
   bottom: 0%;
   opacity: 0.1;
   width: 100%;
   height: 100%;
+  /* margin: 100px; */
 }
 
 .main #bg-2 {
@@ -371,7 +374,7 @@ body {
 
 .main .trees img {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   position: fixed;
   bottom: 0%;
   /* right: 0%; */
@@ -1126,6 +1129,11 @@ section {
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) {
+
+  .main .bgs img {
+    object-fit: cover;
+  }
+
   #contact-us {}
 
   .contact-card {
