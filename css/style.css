@@ -23,6 +23,8 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+
 }
 
 /* width */
@@ -46,6 +48,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(143, 139, 139);
   transition: 0.3s ease background;
+}
+
+.scrollitems {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
 }
 
 .pointer {
