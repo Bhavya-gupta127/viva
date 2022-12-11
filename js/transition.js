@@ -90,7 +90,7 @@ function transition2() {
  #land-3,
  #land-4,
  #particles,
- #viva-logo, #trees{ 
+ #viva-logo { 
     -webkit-mask-size: 10000% 100%;
     mask-size: 10000% 100%;
     -webkit-animation: mask-play-second 0.8s steps(70) forwards;

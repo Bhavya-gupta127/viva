@@ -401,21 +401,6 @@ body {
   bottom: 0%;
 }
 
-#trees_right {
-  /* height: 55vh;
-  width: 55vw;
-  top: 40vh;
-  left: 45vw; */
-  margin: 0;
-  position: fixed;
-  height: 55vh;
-  width: 55vw;
-  right: 0;
-  /* top: 40vh; */
-  /* left: 45vw;
-  bottom: 0; */
-}
-
 .main #l-build {
   position: fixed;
   width: 80vw;
@@ -878,13 +863,8 @@ section {
   height: 40%;
 } */
 
-.gold {
-  visibility: hidden;
-  position: fixed;
-  /* left: 0; */
-  bottom: 0;
-  width: 50%;
-  z-index: 20;
+.landscapes #gold-particles {
+  z-index: -1;
 }
 
 #FOOTER {
