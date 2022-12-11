@@ -96,12 +96,7 @@ function darkMode() {
     delay: 1.5,
     duration: 0.5,
     visibility: "visible",
-<<<<<<< HEAD
   });
-=======
-  })
-
->>>>>>> 258ad4e (Temp-fix: Update overlay gif)
   var card = gsap.timeline();
   // card.to(".middle", 2, { rotationY: 90, transformOrigin: "50% 50%", ease: Linear.easeNone, opacity: 0, duration: 0.5, })
   //     .to(".card", 2, { rotationY: -90, transformOrigin: "50% 50%", ease: Linear.easeNone, opacity: 0, duration: 0.1 }, "<")
