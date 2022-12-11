@@ -175,7 +175,7 @@ section {
 
 .start .logo img {
   position: fixed;
-  height: 25vh;
+  height: 28vh;
   z-index: 2;
   margin-top: -8vh;
 }
@@ -609,7 +609,7 @@ body {
   padding-right: 25px;
   margin-bottom: 0vw;
   padding-bottom: 0vw;
-  margin-top: -3vw;
+  margin-top: -0.1vw;
   z-index: 2;
 }
 
@@ -1212,16 +1212,17 @@ section {
 }
 
 #loader img {
+  object-fit: cover;
   width: auto;
   height: 10vh;
 }
 
-@media only screen and (max-device-width: 480px) {
+/* @media only screen and (max-device-width: 480px) {
   #loader img {
       position: fixed;
       width: 10vw;
       height: 55vh;
       top: 18vh;
   }
-}
+} */
 
