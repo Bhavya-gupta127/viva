@@ -1,11 +1,14 @@
-const light = document.getElementsByClassName("light");
-const dark = document.getElementsByClassName("dark");
+// const light = document.getElementsByClassName("light");
+// const dark = document.getElementsByClassName("dark");
 const planet = document.getElementById("trippy");
 // const planet = document.getElementById('planet');
 
 //NavChange
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
+
+//start
+const startDiv = document.getElementById("start");
 
 window.addEventListener("scroll", () => {
   let current = "";
@@ -31,6 +34,7 @@ window.addEventListener("scroll", () => {
 function changePlanet() {
   planet.src = "assets/img/moon.png";
 }
+
 window.addEventListener("scroll", (event) => {
   myScrollFunction();
 });
@@ -55,15 +59,13 @@ window.addEventListener("scroll", (event) => {
 function darkMode() {
     transition1() ;
     transition2();
+    startDiv.remove();
   $(document).ready(function () {
     $("html").animate({ scrollTop: 0 }, 1);
     $("body").animate({ scrollTop: 0 }, 1);
   });
+   planet.style.visibility = "hidden";
 
-  var homeCard = gsap.timeline();
-  homeCard.to("#test", {
-    visibility: "hidden",
-  });
   var scrollOn = gsap.timeline();
   scrollOn.to("body", {
     overflow: "visible",
@@ -94,21 +96,7 @@ function darkMode() {
     delay: 1.5,
     duration: 0.5,
     visibility: "visible",
-  })
-  var planet = gsap.timeline();
-  planet
-    .to(".trippypl", {
-      opacity: 0,
-      x: 100,
-      duration: 1,
-      onComplete: changePlanet,
-    })
-    .to(".trippypl", {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      delay: 0.5,
-    });
+  });
   var card = gsap.timeline();
   // card.to(".middle", 2, { rotationY: 90, transformOrigin: "50% 50%", ease: Linear.easeNone, opacity: 0, duration: 0.5, })
   //     .to(".card", 2, { rotationY: -90, transformOrigin: "50% 50%", ease: Linear.easeNone, opacity: 0, duration: 0.1 }, "<")
@@ -121,30 +109,6 @@ function darkMode() {
     duration: 0.5,
   });
 
-  var character = gsap.timeline();
-  character
-    .to(".face", {
-      opacity: 0,
-      // rotation: 360,
-      // y: 100,
-      // duration: 1,
-    })
-    .to(".ninja", {
-      opacity: 1,
-      visibility: "visible",
-    })
-    .from("#character", {
-      opacity: 0,
-      y: 1000,
-    })
-    .from(
-      "#glow",
-      {
-        opacity: 0,
-        y: 1000,
-      },
-      "<"
-    );
   // var landscape=gsap.timeline();
   // landscape.to(".landscape", {
   //         opacity: 0,
@@ -172,23 +136,6 @@ function darkMode() {
 
   var landscape = gsap.timeline();
   landscape
-    .to(
-      ".landscape",
-      {
-        opacity: 0,
-        y: 100,
-        duration: 0.5,
-      },
-      ">"
-    )
-    .to(
-      ".mainbg",
-      {
-        opacity: 0,
-        duration: 0.5,
-      },
-      ">"
-    )
     .to(
       ".darkbg",
       {
